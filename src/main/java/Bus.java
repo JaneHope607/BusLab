@@ -11,13 +11,12 @@ public class Bus {
         this.capacity = capacity;
     }
 
-
     public int getPassengers() {
         return this.passengers.size();
     }
 
-    public void addPassenger(Person person) {
-        this.passengers.add(person);
+    public void addPassenger(BusStop busStop) {
+        this.passengers.add(busStop.removePassenger());
     }
 
     public void removePassenger() {
